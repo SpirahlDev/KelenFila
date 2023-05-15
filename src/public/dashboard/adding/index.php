@@ -5,6 +5,7 @@
         $rq="SELECT designCategorie,idCategorie from categorie";
         $categorie=$bd->query($rq);
         $categorie=$categorie->fetchAll(PDO::FETCH_ASSOC);
+        $date=date_create();
     ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -36,7 +37,7 @@
                 <div class="day">Jours</div>
                 <div id="calendar">
                     <img src="../icones/date.svg" alt="" height="20px" style="margin-right: 5px;">
-                    <span>01 Avril 2023</span>
+                    <span><?=$date->format("d/m/Y")?></span>
                 </div>
             </div>
         </div>

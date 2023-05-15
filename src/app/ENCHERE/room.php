@@ -8,7 +8,7 @@
     <script src="jquery.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="styleChat.css">
-</head> 
+</head>  
 <body>
     <div id="modal">
         <div class="modal-content">
@@ -85,6 +85,7 @@
                             votes
                         </span>
                     <input type="hidden" id="port" name="port" value="<?=$port?>">
+                    <input type="hidden" id="idEnchere" name="idEnchere" value="<?=$verif?>">
                     </div>
                 </div>
                 <div id="bloc-under">

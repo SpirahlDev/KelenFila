@@ -185,7 +185,7 @@ class Enchere implements MessageComponentInterface {
     private function charger(){
         //methode permettant de lire dans la base de donnée, et de recuperer les lots,qui seront ensuite fetcher un a un
         $db=use_db(true);
-        $requet="SELECT idLot,designLot,descriptionLot,estimatLot,etatLot,numeroLot,image1,designCategorie,durerEnchere FROM lot INNER JOIN enchere on lot.idEnchere=".$this->idEnchere." INNER JOIN categorie on enchere.idCategorie=categorie.idCategorie where isVendue=0";
+        $requet="SELECT idLot,designLot,descriptionLot,estimatLot,etatLot,numeroLot,image1,designCategorie,durerEnchere FROM lot INNER JOIN enchere on lot.idEnchere=".$this->idEnchere." INNER JOIN categorie on enchere.idCategorie=categorie.idCategorie where isEnded=0";
         $this->dbCursor=$db->query($requet,\PDO::FETCH_ASSOC);
         $this->lot=$this->dbCursor->fetch();
         if(!$this->lot){

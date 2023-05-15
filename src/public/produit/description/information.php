@@ -1,6 +1,20 @@
 <?php session_start();
+require_once("root.php");
+require_once("functions.php");
+$idLot=$_GET["idLot"];
+$db=use_db(true);
+$requete="SELECT lot.*, enchere.dateEnchere,enchere.idEnchere,categorie.designCategorie
+FROM lot
+INNER JOIN enchere
+ON lot.idEnchere = enchere.idEnchere
+INNER JOIN categorie ON categorie.idCategorie=enchere.idCategorie
+WHERE lot.idLot=?";
 
-
+$stm=$db->prepare($requete);
+$stm->bindValue(1,$idLot,PDO::PARAM_INT);
+$stm->execute();
+$lot=$stm->fetch(PDO::FETCH_ASSOC);
+$db=use_db(false);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,7 +34,7 @@
                 <div id="bloc-image-part">
                     <div id="cadre">
                         <div class="image-unite">
-                            <img src="/opt/lampp/htdocs/KelenFila/image_prod/buggatti_57.png" alt="montre">
+                            <img src="<?=ROOT_PROJECT.$lot["image1"]?>" alt="montre">
                         </div>
                         <div class="image-unite">
                             <img src="/opt/lampp/htdocs/KelenFila/image_prod/buggatti_57.png" alt="montre">
@@ -56,7 +70,7 @@
                     <button class="input-btn">
                         <span>Participer</span>
                         <span>
-                            <img src="#" alt="arrow">
+                            <!-- <img src="#" alt="arrow"> -->
                         </span>
                     </button>
                 </form>
@@ -66,22 +80,21 @@
 
                 </div>
                 <ul id="description-element">
-                    <li>Voiture | Vintage</li>
-                    <li>Bugatti Type 57</li>
+                    <li><?=$lot["designCategorie"]?></li>
+                    <li><?=$lot["designLot"]?></li>
                     <li>
                         <span>Esatimation</span>
-                        <span>34.00000000 <span #id="price">FCFA</span></span>
+                        <span><?=$lot["estimatLot"]?> <span #id="price">FCFA</span></span>
                     </li>
                     <li>
                         <p>Historique</p>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est unde cumque vel omnis voluptatibus quaerat ea eum nesciunt cupiditate similique, aliquam at ratione veritatis laboriosam eaque necessitatibus eos fugiat. Magnam.
-                            Id aut pariatur nesciunt neque hic itaque, vero ducimus dicta consequuntur, quasi voluptates debitis totam voluptate molestiae suscipit. Sunt mollitia beatae, omnis quo inventore vitae minus debitis molestiae suscipit voluptate.
+                           <?= $lot["descriptionLot"]?>
                         </p>
                     </li>
                     <li>
                         <span #id="etat-lot">
-                            Quasi Neuf
+                           <?=$lot["etatLot"]?>
                         </span>
                         <span>
                             Vendeur
@@ -91,8 +104,8 @@
                         </span>
                     </li>
                     <li id="info-divers">
-                        <span>Lot 2 du cataglogue</span>
-                        <span>Voiture De Luxe Vintage</span>
+                        <span>Lot <?=$lot["numeroLot"]?> du cataglogue</span>
+                        <span><?=$lot["designCategorie"]?></span>
                     </li>
                 </ul>
             </div>

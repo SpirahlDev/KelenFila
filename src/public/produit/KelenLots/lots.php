@@ -9,14 +9,14 @@ session_start();
             $designCategorie= $_SESSION["designCategorie"];
             $idCat=$_GET["id"];
             $db=use_db(true);
-            $requete="SELECT lot.*, enchere.dateEnchere
+            $requete="SELECT lot.*, enchere.dateEnchere,enchere.idEnchere
             FROM lot
             INNER JOIN enchere ON lot.idEnchere = enchere.idEnchere
             WHERE enchere.idCategorie = $idCat
             ORDER BY dateAjout DESC" ;
             $stm=$db->query($requete);
             $lots=$stm->fetchAll(PDO::FETCH_ASSOC);
-            $db=use_db(false);
+            $db=use_db(false); 
             $attribut='data-current';
             $with="lot"; //or maybe vente
             

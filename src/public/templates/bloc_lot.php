@@ -1,7 +1,7 @@
 <?php 
     require_once("functions.php");
     $db=use_db(true);
-    $requete="SELECT lot.*, enchere.dateEnchere
+    $requete="SELECT lot.*, enchere.dateEnchere,enchere.idEnchere
     FROM lot
     INNER JOIN enchere
     ON lot.idEnchere = enchere.idEnchere

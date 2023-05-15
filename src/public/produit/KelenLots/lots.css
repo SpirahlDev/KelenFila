@@ -70,9 +70,12 @@
     border-radius: 10px;
     position: sticky;
     overflow-y: scroll;
-    top: 50px;
+    top: 90px;
     flex-direction: column;
     color: white;
+}
+header{
+    height: 80px;
 }
 #bloc-article{
     margin-top: 40px;
@@ -80,7 +83,7 @@
 #ul_under_bloc-article{
     padding-left: 0;
     gap: 25px;
-    width: 100%;
+    width: 95%;
     padding-right: 0;
 }
 #bloc-left-safe{

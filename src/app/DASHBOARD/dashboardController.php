@@ -61,7 +61,7 @@
         
     }
     public static function ajouterLot($data,$idEnchere,$designUser){
-        $dir="../../../FTP-server/lots/$designUser/";
+        $dir="FTP-server/lots/$designUser/";
         if(!file_exists($dir)){
             mkdir($dir,0777,true);
         }

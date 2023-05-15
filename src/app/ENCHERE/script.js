@@ -5,7 +5,7 @@ var last_up=0;
 
 function getPort(){
     let port=document.getElementById("port").value;
-    var socket = new WebSocket("ws://192.168.1.61:"+port);
+    var socket = new WebSocket("ws://192.168.1.198:"+port);
 }
 
 $(document).ready(function(){

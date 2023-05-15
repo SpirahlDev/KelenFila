@@ -21,14 +21,14 @@ $id=$q["id"];
     // APPEL METHODE GETVENDEUR DE VENDEUR 
 }
 function getInRoom($q){
-    $idEnchere=$q["idEnchere"]; 
+    $idEnchere=$q; 
     $db=use_db(true);
     control_entry($idEnchere);
-    $requet="SELECT idEnchere from enchere where idEnchere=?";
+    $requet="SELECT idEnchere from enchere where enchere.idEnchere=?";
     $obj=$db->prepare($requet);
     $obj->bindValue(1,$idEnchere,PDO::PARAM_INT);
+    $verif=$obj->execute();
     $verif=$obj->fetch(PDO::FETCH_ASSOC);
-    $verif=$verif[0];
     $db=use_db(false);
     if($verif){
         $cache=new Memcached();

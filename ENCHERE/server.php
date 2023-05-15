@@ -12,7 +12,7 @@ use Ratchet\WebSocket\WsServer;
                 new Chat($idEnchere)
             )
         ),
-        8081
+        8086
     ); 
 
     $server->run();

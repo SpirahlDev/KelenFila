@@ -1,4 +1,13 @@
-<?php session_start()?>
+<?php session_start();
+require_once("functions.php");
+    $db=use_db(true);
+    $req="SELECT idCategorie,designCategorie
+    FROM categorie";
+    $stm=$db->query($req);
+    $categorie=$stm->fetchAll(PDO::FETCH_ASSOC);
+    $db=use_db(false);
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,6 +15,7 @@
     <title>Accueil</title>
     <script src="script_frontend/jquery.js"></script>
     <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="produit/KelenLots/lots.css">
     <link rel="stylesheet" href="general_style/general_style.css">
 </head>
 <body>
@@ -14,7 +24,7 @@
        <div id="header">
             <div id="left-head">
                 <p>
-Bienvenue sur KelenFila, le site d'enchères en ligne de référence en Côte d'Ivoire. Sur notre plateforme, vous trouverez de tout : art ancien ou moderne, électronique, livres, automobiles, etc. Bénéficiez d'un service de qualité et de produits certifiés par des experts. Il vous suffit de renchérir ! Alors Kelen, Fila ; à vous.</p>
+Bienvenue sur KelenFila, le site d'enchères en ligne de référence en Côte d'Ivoire. Art ancien et moderne, électronique, livres, automobiles, etc. Bénéficiez d'un service de qualité et de produits certifiés par des experts.</p>
                 <p>Votre partenaire de confiance</p>
                 <button>Découvrir <img src="" alt=""></button>
             </div>
@@ -49,10 +59,12 @@ Bienvenue sur KelenFila, le site d'enchères en ligne de référence en Côte d'
             <img src="assets/img/auction.png" alt="">
         </div>
     </section>
-    <section id="kelen-categorie">
-
-    </section>
     
+    <?php 
+        require_once("bloc_lot.php");
+
+    ?>
+
     <?php require_once("footer.php")?>
     <script src="script_frontend/general_script.js"></script>
 </body>

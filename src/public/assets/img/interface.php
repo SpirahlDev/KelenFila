@@ -45,7 +45,8 @@
                     <p>Description</p>
                     <div id="text-descript">
                         <p>
-                        Cette voiture de collection exceptionnelle est un véritable chef-d’œuvre d’ingénierie et de design. Avec son histoire fascinante et sa restauration méticuleuse, elle est prête à être appréciée par un nouveau propriétaire passionné. Ne manquez pas cette occasion unique de posséder l’une des voitures les plus emblématiques et les plus recherchées de tous les temps.
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quae eligendi suscipit aliquid repudiandae iure rem cum eveniet. Ad, nisi. Expedita reiciendis tempora facere? Culpa eveniet eaque nemo vero amet!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates asperiores quas accusamus aliquid esse, eligendi quo dolor nobis aliquam, quisquam vero aut, sapiente nam temporibus ad iste nostrum debitis explicabo!
                         </p>
                     </div>
                 </li>
@@ -69,7 +70,7 @@
                     </div>
                     <div class="div-arb">
                         <span id="vote">
-                            0/3
+                            0/13
                         </span> 
                         <span class="span-arb">
                             votes
@@ -99,7 +100,7 @@
                         </div>
                         <div id="rebourd">
                             <span id="delai">
-                                60s
+                                20s
                             </span>
                             <span id="duree"></span>
                         </div>

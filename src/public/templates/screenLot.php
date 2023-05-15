@@ -1,3 +1,4 @@
+<?php require_once("root.php");?>
 <section id="bloc-article">  
         <ul id="ul_under_bloc-article">
             <?php foreach($lots as $lot):?>
@@ -16,16 +17,16 @@
                         $status="Enchère terminée";
                     }
                 ?>
-                <a href="">
+                <a href="<?=ROOT_PROJECT."src/public/produit/description/information.php?idLot=".$lot["idLot"]?>">
                     <div class="card-bloc-img">
-                        <img src="<?="../".$lot["image1"]?>" alt="montre">
+                        <img src="<?=ROOT_PROJECT.$lot["image1"]?>" alt="montre">
                     </div>
                     <ul class="descript-card">
                         <li class="lot">
                             <span class="numLot">Lot <?=$lot["numeroLot"] ?></span>
                             <span class="rigth-span-etat">
                                 <?=$status?>
-                            </span>
+                            </span> 
                         </li>
                         <li class="designLot">
                             <span class="left-span">Nom</span>
@@ -39,9 +40,19 @@
                             <p><?=$lot["descriptionLot"] ?></p>
                         </li>
                         <li class="action-bloc">
-                            <a href="#">
-                                <button class="action-btn">Participer <img src="" alt=""></button>
-                            </a>
+                            <?php if(!$diff->invert &&!$lot["isEnded"]):?>
+                                <form method="post" action="<?=ROOT_PROJECT.'src/app/controller/'?>MainController.php" id="toEnchere">
+                                    <input class="action-btn" type="submit" value="Participer">
+                                    <input type="hidden" name="header" value="getIn">
+                                    <input type="hidden" name="request" value="<?=$lot["idEnchere"]?>">
+                                </form>
+                            <?php elseif(!$lot["isEnded"]):?>
+                                    <div id="callMeBack">
+                                        <input class="action-btn" type="submit" value="Me Prévenir">
+                                        <input type="hidden" name="header" value="rappel">
+                                        <input type="hidden" name="request" value="<?=$lot["idLot"]?>">
+                                    </div>
+                            <?php endif;?>
                         </li>
                     </ul>
                 </a>

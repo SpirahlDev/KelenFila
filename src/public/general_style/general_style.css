@@ -81,14 +81,15 @@ footer{
 
 
 /* CODE DE LA NAV-BAR  */
-nav{
-    position: relative;
-    /* transition: 0.3s; */
-}
+
 .nav-set{
+    position: fixed;
     height: 80px;
     display: flex;
     background-color: white;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
 .nav-set a{
     z-index: 101;
@@ -337,3 +338,70 @@ li.card-lot a {
   .head-menu-list p{
     cursor: default;
   }
+input.action-btn {
+    height: 25px;
+    width: 75px;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+}
+
+/* NALOUS PART */
+article{
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 2em;
+    }
+    .flexcover{
+        width: 13em;
+        height: 13em;
+        background-color: black;
+        margin-bottom: 2em;
+        color: white;
+        transition: transform .5s;
+        border-radius: .2em;
+    }
+    .flexcover a{
+        color: white;
+    }
+    .flexcover p{
+        text-align: center;
+        background-color: #434343;
+        height: 20%;
+        margin: 0;
+        padding: 0;
+    }
+    .flexcover img{
+        padding: 0;
+        margin: 0;
+    }
+    .flexbox img{
+        border-radius:.3em ;
+    }
+    .categories{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .flexcover:nth-last-child(1):hover{
+        transform: translateX(2em);
+    }
+    .inline{
+        display: inline-block;
+        border-radius: 100%;
+        padding: .3em .6em;
+    }
+    #flex:hover .inline{
+        background-color: white;
+    }
+    #flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #373737;
+    }
+
+/* FIN */

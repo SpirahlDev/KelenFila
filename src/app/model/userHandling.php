@@ -87,7 +87,7 @@ class particulier extends user{
         $objet->bindValue(4, $this->dateNaissance, PDO::PARAM_STR);
         $objet->bindValue(5, $dir, PDO::PARAM_STR);
 
-        $objet->execute();
+        $objet->execute(); 
         $db=use_db(false);
 
     }

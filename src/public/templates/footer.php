@@ -5,7 +5,7 @@ $for_footer_path=ROOT_PROJECT.'src/public/assets/icon/';
         <div class="footerSection1">
             <section>
                 <img id="logoFooter" src="<?= $for_footer_path?>logo.svg" alt="">
-                <p id="InfoFooter" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores doloremque nobis voluptates ipsum deleniti similique exercitationem repellendus mollitia sunt possimus, pariatur porro dolor facere est excepturi quo esse reprehenderit dicta!</p>
+                <p id="InfoFooter" >Bienvenue sur KelenFila, le site d'enchères en ligne de référence en Côte d'Ivoire. Sur notre plateforme, vous trouverez de tout : art ancien ou moderne, électronique, livres, automobiles, etc. Bénéficiez d'un service de qualité et de produits certifiés par des experts.</p>
                 <article>
                     <img class="iconeFooter" src="<?= $for_footer_path?>linkedIn.svg" alt="">
                     <img class="iconeFooter" src="<?= $for_footer_path?>twitter.svg" alt="">

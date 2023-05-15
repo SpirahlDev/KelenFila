@@ -32,16 +32,17 @@
             <section class="blocTableauDeBord1">
                 <div class="bloc1">
                     <article class="bloc1_partie1"><img src="icones/marteau.svg" alt=""> <p>Enchères en cours</p> <button class="boutonBloc" >Voir la liste complète</button></article>
-                    <article class="bloc1_partie2"><p>4</p></article>
+                    <article class="bloc1_partie2"><p>0</p></article>
                 </div>
                 <div class="bloc2">
                     <article class="bloc2_partie1"><img src="icones/dollar.svg" alt=""><p>Liste de paiements</p><button class="boutonBloc">Voir la liste complète</button></article>
-                    <article class="bloc2_partie2"><p>3</p></article>
+                    <article class="bloc2_partie2"><p>0</p></article>
                 </div>
                 <div class="bloc3">
                     <article class="bloc3_partie1"><img src="icones/marteau2.svg" alt=""><p>Nombre total de ventes</p><button class="boutonBloc">Voir la liste complète</button></article>
-                    <article class="bloc3_partie2"><p>30</p></article>
+                    <article class="bloc3_partie2"><p>0</p></article>
                 </div>
+                <?php if($_SESSION["type_user"]!="particulier"):?>
                     <div class="bloc4">
                         <article class="bloc4_partie1"><p>Ajouter une enchère</p></article>
                         <article class="bloc4_partie2">
@@ -50,6 +51,7 @@
                             </a>
                         </article>
                     </div>
+                <?php endif;?>
             </section>  
     
             <!--Deuxième section -->
@@ -57,35 +59,35 @@
                 <div class="bloc5">
                     <ul>
                         <li>Nombre de lots en ventes</li>
-                        <li id="bloc5Nombre"><em>76</em> <img src="icones/pourcentage.svg" alt=""></li>
+                        <li id="bloc5Nombre"><em>0</em> <img src="icones/pourcentage.svg" alt=""></li>
                         <li> <button class="boutonBloc">Voir liste complète </button></li>
                     </ul>
                 </div>
                 <div class="bloc6">
                     <ul>
                         <li>Lots total vendues</li>
-                        <li id="bloc6Nombre"><em>254</em><img src="icones/pourcentage.svg" alt=""></li>
+                        <li id="bloc6Nombre"><em>0</em><img src="icones/pourcentage.svg" alt=""></li>
                         <li><button class="boutonBloc">Voir liste complète </button></li>
                     </ul>
                 </div>
                 <div class="bloc7">
                     <ul>
                         <li>Revenue total</li>
-                        <li id="bloc7Nombre"><em>12 000 000</em>  <img src="icones/dollar.svg" alt=""></li>
+                        <li id="bloc7Nombre"><em>0</em>  <img src="icones/dollar.svg" alt=""></li>
                         <li><button class="boutonBloc">Voir liste complète </button></li>
                     </ul>
                 </div>
                 <div class="bloc8">
                     <ul>
                         <li>Historique de ventes</li>
-                        <li id="bloc8Nombre"> <em>542</em><img src="icones/historique.svg" alt=""></li>
+                        <li id="bloc8Nombre"> <em>0</em><img src="icones/historique.svg" alt=""></li>
                         <li><button class="boutonBloc">Voir liste complète </button></li>
                     </ul>
                 </div>
                 <div class="bloc9">
                     <ul>
                         <li>Contrat de ventes</li>
-                        <li id="bloc9Nombre"><em>76</em> <img src="icones/pourcentage.svg" alt=""></li>
+                        <li id="bloc9Nombre"><em>0</em> <img src="icones/pourcentage.svg" alt=""></li>
                         <li><button class="boutonBloc">Voir liste complète </button></li>
                     </ul>
                 </div>
@@ -95,11 +97,11 @@
             <section class="blocTableauDeBord3">
                 <div class="bloc10">
                     <article class="bloc10_partie1"><img src="icones/car.svg" alt=""><p>Lots en attente de livraison</p> <button class="boutonBloc"> Voir liste complète </button></article>
-                    <article class="bloc10_partie2"><p>28</p></article>
+                    <article class="bloc10_partie2"><p>0</p></article>
                 </div>
                 <div class="bloc11">
                     <article class="bloc11_partie1"><img src="icones/car.svg" alt=""><p>Lots livrés</p><button class="boutonBloc">Voir liste complète</button></article>
-                    <article class="bloc11_partie2"><p>12</p></article>
+                    <article class="bloc11_partie2"><p>0</p></article>
                 </div>
                 <div class="bloc12">
                     <article class="bloc12_partie1"> <img src="icones/car.svg" alt=""><p>Lots achetés</p> <button class="boutonBloc">Voir liste complète</button></article>

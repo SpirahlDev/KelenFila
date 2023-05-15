@@ -20,7 +20,7 @@
                 if($idEnchereCreated) {
                     $_SESSION["idEnchere_add"]=$idEnchereCreated;
                     $_SESSION["nbFormulaires"]=$data["nb_formulaires"];
-                    $alert["value"]="Enchère créé avec succès";
+                    $alert["value"]="Enchère créé avec succès"; 
                     $alert["status"]="OK";
                 }
                 else{

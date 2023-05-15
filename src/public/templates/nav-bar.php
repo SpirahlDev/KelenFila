@@ -7,7 +7,6 @@ $for_nav_path=ROOT_PROJECT.'src/public/';
             <img src="<?=$for_nav_path?>assets/logo/kelenFila.png" id="logo" alt="kelenFila" title="Votre partenaire de confiance">
         </a>          
     <ul id="list-nav">
-        <li><a href="<?=$for_nav_path?>">Accueil</a></li>
         <li id="acheter-nav-btn">
             <span>Acheter</span>
             <div id="menu-acheter-btn">
@@ -75,17 +74,17 @@ $for_nav_path=ROOT_PROJECT.'src/public/';
                             <a href="<?=ROOT_PROJECT.'src/app/controller/'?>MainController.php?header=categorie-search&search=Autres véhicules et engins ">Autre Véhicules et Engins</a> 
                         </li>
                     </ul>
-                </div>
+                </div> 
             </div>
         </li>
         <li><a href="#">Ventes en cours</a></li>
-        <li><a href="#">Vendre</a></li>
+        <li><a href="<?=ROOT_PROJECT."src/public/liste/"?>">Vendre</a></li>
         <?php if(isset($_SESSION["idUser"])):?>
             <li><a href="<?=$for_nav_path?>dashboard">Compte <img class="nav-ico" id="account-ico" src="<?=$for_nav_path?>assets/icon/account.svg" alt=""> </a></li>
             <li><a href="<?=$for_nav_path?>connexion/disconnect.php">Se déconnecter <img class="nav-ico" id="disconect-ico" src="<?=$for_nav_path?>assets/icon/disconect.svg" alt=""> </a></li>
             <?php else :?>
                 <li><a href="<?=$for_nav_path?>connexion/">Se connecter</a></li>
-                <li><a href="<?=$for_nav_path?>inscription/">S'inscire</a></li>
+                <li><a href="<?=$for_nav_path?>inscription/">S'inscrire</a></li>
         <?php endif;?>
     </ul>
     <div class="nav-set" id="under-nav">

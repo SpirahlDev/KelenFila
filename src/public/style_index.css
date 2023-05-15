@@ -4,6 +4,7 @@ header{
 #header{
     display: flex;
     margin: 105px;
+    gap: 55px;
 }
 
 .box-presentation{
@@ -29,8 +30,9 @@ header{
 }
 .child-r{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+    gap: 2px;
 }
 #left-head,#right-head{
     width: 50%;
@@ -69,7 +71,7 @@ div#right-head {
     background-color: #262626;
 }
 #left-head p{
-    font-size: larger;
+    font-size: large;
 }
 #kelen{
     margin-top: 100px;
