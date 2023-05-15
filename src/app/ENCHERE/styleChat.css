@@ -1,0 +1,392 @@
+:root{
+    --green:#44D7B6;
+    --blue_sombre:#214F77;
+    --black_carte_produit:#262626;
+    --noir_autre:#373737;
+    --yellow:#E6B925;
+    --white_BG:#F3F6FA;
+}
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+@font-face {  
+    font-family: "segoeUI";
+    src: url(assets/fonts/segoeUI.ttf);
+}
+@font-face {
+    font-family: "segoeUI-semilight";
+    src: url(assets/fonts/segoeUI-semiligth-italic.ttf);
+}
+@font-face {
+    font-family: "segoeUI-italic";
+    src: url(assets/fonts/segoeUI-italic.ttf);
+}
+body{
+    height: 100vh;
+    background-color: #F3F6FA;
+}
+/* DEFINITION DES POLICES D'ECRITURE  */
+h5,#skip,#text-descript,.under-left,.under-right,#general-items,#prix-encherir{
+    font-family:"segoeUI";
+}
+h5{
+    text-align: center;
+}
+#skip-btn span{
+    font-family: "segoeUI-semilight";
+}
+.under-right label{
+    font-family: "segoeUI-semilight";
+}
+#numero-Lot{
+    font-family: "segoeUI-semilight";
+}
+.left-items>p{
+    font-family: "segoeUI-semilight";
+}
+
+#devise-left{
+    color: var(--yellow);
+}
+/* fin */
+#description{
+    background-color: var(--noir_autre);
+    color: white;
+}
+#ecran{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family:"segoeUI";
+    overflow-y: scroll;
+}
+#ecran::-webkit-scrollbar{
+    width: 10px;
+}
+section#ecran::-webkit-scrollbar-thumb {
+    background-color: #e6b925;
+    border-radius: 10px;
+}
+#ecran::-webkit-scrollbar-button:start:decrement {
+    background-image: url('assets/up.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    width: 10px;
+  }
+  
+#ecran::-webkit-scrollbar-button:end:increment {
+    background-image: url('assets/down.svg');
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 10px;
+
+}
+
+
+message-box{
+    margin-top: 10px;
+    width: 40%;
+    display: flex;
+    position: relative;
+    color: white;
+    padding: 10px;
+}
+.board_msg{
+    height: 70px;
+    background-color: #214F77;
+    display: flex;
+    border-radius: 20px;
+    font-size: smaller;
+    align-items: center;
+    justify-content: center;
+}
+.numbers{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+.multiple_btns{
+    transition: 0.3s;
+    width: 51%;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.info_span{
+    font-size: small;
+    display: none;
+    transition: 0.3s;
+    color: black;
+}
+.multiple_btns:hover .info_span{
+    display: block;
+    padding-left: 4px;
+    margin-top: 5px;
+}
+.chiffre_btn input{
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #214F77;
+}
+.chiffre_btn input:hover{
+    background-color: #d5d5d5;
+} 
+.msg_display{
+    padding: 15px;
+}
+main{
+    display: flex;
+}
+#interface{
+    width: 80%;
+    height: 90vh;
+
+}
+#description{
+    width: 20%;
+    height: 100vh;
+}
+.nomEnchereur{
+    color: black;
+    font-size: smaller;
+    position: absolute;
+    bottom: -10px;
+    left: 25px;
+}
+#skip{
+    display: flex;
+    font-family: "segoeUI";
+    padding-left: 20px;
+}
+#vote{
+    margin-left: 10px;
+}
+.span-arb{
+    margin-left: 2px;
+}
+#skip-btn{
+    display: flex;
+    align-items: center;
+    width: 155px;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+#skip-btn img{
+    width: 30px;
+}
+.div-arb{
+    margin-top: 6px;
+}
+#controle{
+    box-shadow: 0px -2px 1px #2c2c2c14;
+    height: 21%;
+
+}
+#bloc-under{
+    display: flex;
+    justify-content: space-between;
+    height: 75%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.under-left{
+    width: 40%;
+    padding: 20px;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+   
+}
+#rebourd{
+    width: 4vw;
+    height: 18px;
+    margin-top: 35px;
+}
+.plus-btn{
+    height: 50px;
+    width: 110px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+.under-right{
+    width: 60%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.under-right label{
+    font-size: small;
+}
+#prix-encherir{
+    height: 50px;
+    width: 240px;
+    background-color: var(--noir_autre);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    align-items: center;
+    outline:none;
+    text-align: center;
+    font-size: large;
+}
+#btn-encherir{
+    border: none;
+    border-radius: 2px;
+    background-color: var(--green);
+    height: 50px;
+    color: white;
+    width: 100px;
+    padding-top: 5px;
+    transition: 0.1s;
+}
+#btn-encherir>span:nth-child(2){
+    display: flex;
+    font-size: smaller;
+    gap: 2px;
+    justify-content: center;
+}
+.action-input{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#prix{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.self-msg{
+    place-self: flex-end;
+}
+.board_mself{
+    background-color: var(--green);
+}
+
+
+#description #left-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 98%;
+}
+
+.left-items{
+    width: 80%;
+}
+.left-items img{
+width: 100%;
+box-shadow: 0 0 20px 0px #ffffff1c;
+}
+#settings{
+    display: flex;
+}
+.exit-btn{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: #545454;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.exit-btn img{
+    width: 20px;
+    margin: 11px;
+}
+#text-descript{
+    height: 202px;
+    overflow-y: scroll;
+}
+#general-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#text-descript::-webkit-scrollbar{
+    width: 10px;
+}
+#text-descript::-webkit-scrollbar-thumb {
+    background-color: #e6b925;
+    border-radius: 10px;
+}
+#text-descript::-webkit-scrollbar-button:start:decrement {
+    background-image: url('assets/up.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 10px;
+  }
+  
+#text-descript::-webkit-scrollbar-button:end:increment {
+    background-image: url('assets/down.svg');
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 10px;
+
+}
+#general-infos{
+    color: #CDCDCD;
+}
+#design-Lot{
+    color: white;
+}
+.exit-btn:hover{
+    background-color: var(--blue_sombre);
+}
+button{
+    transition: 0.1s;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--noir_autre);
+}
+#btn-encherir:hover{
+background-color: var(--noir_autre);
+}
+
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+  
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+  
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  

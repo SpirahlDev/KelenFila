@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+<body>
+    <h3>Inscription(particulier)</h3>
+    <form action="../../../app/controller/userController.php" method="post" enctype="multipart/form-data">
+        <div id="champs">
+            <div class="champs-bloc">
+                <div id="name">
+                    <label for="nom">Nom</label>
+                    <input class="input-common" type="text" name="nom" id="nom">
+                </div>
+                <div id="first-name">
+                    <label for="prenom">Prenom</label>
+                    <input class="input-common" type="text" name="prenom" id="prenom">
+                </div>
+                <input type="hidden" name="t" value="particular">
+                <div id="numero">
+                    <label for="numero">Numero de téléphone</label>
+                    <input class="input-common" type="tel" name="numero" id="numero">
+                </div>
+            </div>
+            <div class="champs-bloc">
+                <div id="email">
+                    <label for="email">Email</label>
+                    <input class="input-common" type="email" name="email" id="email">
+                </div>
+                <div id="pays">
+                    <label for="pays">Pays</label>
+                    <select id="pays-afrique-uemoa" name="pays">
+                        <option value="">Sélectionner un pays</option>
+                        <option value="Bénin">Bénin</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                        <option value="Guinée-Bissau">Guinée-Bissau</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Sénégal">Sénégal</option>
+                        <option value="Togo">Togo</option>
+                    </select>                      
+                </div>
+                <input type="hidden" name="q" value="sign">
+                <div id="ville">
+                    <label for="ville">ville</label>
+                    <input class="input-common" type="text" name="ville" id="ville">
+                </div>
+            </div>
+            <div class="champs-bloc">
+                <div id="adresse">
+                    <label for="adresse">adresse</label>
+                    <input class="input-common" type="text" name="adresse" id="adresse">
+                </div>
+                <div id="password">
+                    <label for="psw">
+                        <span>Mot de passe</span>
+                        <span>*Doit contenir majuscules, caractère spéciaux et chiffres</span>
+                    </label>
+                    <input class="input-common" type="password" name="password" id="pws">
+                </div>
+                <div id="password-confirm">
+                    <label for="psw-confirm">
+                        <span>Confirmation de mot de passe</span>
+                    </label>
+                    <input class="input-common" type="password" name="password-confirm" id="psw-confirm">
+                </div>
+            </div>
+        </div>
+        <div id="CNI">
+           <p>Afin de garantir la sécurité de tous nos utilisateurs et le respect des règles en vigueur, nous vous demanderons de nous fournir pour terminer l'inscription, une piéce nationale d'identité pour conclure cette inscription</p> 
+           <input type="file" name="CNI" id="CNI">
+        </div>
+        <input type="checkbox" name="accord" id="accord" value="true">
+        <p>En continuant l'inscription vous acceptez les <a href="#">contrats de licence</a> de KelenFila</p>
+        <input type="submit" value="S'inscrire">
+    </form>
+</body>
+</html>

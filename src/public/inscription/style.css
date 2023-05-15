@@ -1,0 +1,50 @@
+#section-choix{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#choice-route{
+    width: 40%;
+    height: 55%;
+
+}
+#choices-list li{
+    height: 50%;
+}
+#choices-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.choix{
+    width: 100%;
+    height: 62%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#prof-choice{
+    background-color: #2C2C2C;
+}
+#parti-choice{
+    background-color:#D7B544;
+}
+.particular{
+    text-align: center;
+    font-size: large;
+}
+.professionnel{
+    color: white;
+    text-align: center;
+    font-size: large;
+
+}
+.info-choix{
+    font-size: small;
+    font-family: "segoeUI-semilight";
+    
+}

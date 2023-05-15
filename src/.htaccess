@@ -1,0 +1,1 @@
+php_value include_path "/opt/lampp/htdocs/KelenFila/src/public/:/opt/lampp/htdocs/KelenFila/src/public/templates/:/opt/lampp/htdocs/KelenFila/src/app/config/:/opt/lampp/htdocs/KelenFila/src/app/controller/"

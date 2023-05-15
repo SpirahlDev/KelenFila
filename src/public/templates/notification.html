@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body{
+            height: 100vh;
+            display: flex;align-items: center;
+            justify-content: center;
+          }
+
+          #shape-notify {
+            position: absolute;
+            border-radius: 10px;
+            background-color: #599c60;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            padding: 15px;
+            width: -moz-fit-content;
+            width: fit-content;
+            cursor: pointer;
+            transition: 0.3s;
+            display: none;
+          }
+          #shape-notify:hover{
+            transform: translateY(-5px);
+          }
+          
+          #content-notify {
+            text-align: center;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            max-height: 18vh;
+            max-width: 45vh;
+          }
+          
+          #close-btn-notify {
+           
+            font-size: 20px;
+            cursor: pointer;
+          }
+          
+    </style>
+</head>
+<body>
+        <div id="shape-notify">
+          <div id="content-notify">
+              <p>Contenu de la forme ici</p>
+              <div id="close-btn-notify">&times;</div>
+          </div>
+        </div>
+      
+</body>
+</html>

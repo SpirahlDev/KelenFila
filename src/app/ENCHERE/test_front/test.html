@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #messages {
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          
+          .message {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+          }
+          
+          .envoye {
+            align-self: flex-end;
+          }
+          
+          .recu {
+            align-self: flex-start;
+          }
+          
+          .recu + .envoye {
+            margin-top: auto;
+          }
+          
+    </style>
+</head>
+<body>
+    <div id="messages">
+        <div class="message recu">
+          <p>Message reçu</p>
+        </div>
+        <div class="message envoye">
+          <p>Message envoyé</p>
+        </div>
+        <div class="message recu">
+          <p>Message reçu</p>
+        </div>
+        <div class="message envoye">
+          <p>Message envoyé</p>
+        </div>
+      </div>
+      
+</body>
+</html>

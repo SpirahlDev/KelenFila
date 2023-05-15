@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sooth Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="fixer">
+            <div id="logo-dash">
+                <a href="#">
+                    <img src="src/dashboard.svg" alt="dahsboard">
+                    <p>Dashboard</p>
+                </a>
+            </div>
+        </div>
+        <ul>
+            <li class="nav-main-item">
+                <a href="#">
+                    <img src="src/commande.svg" alt="commande">
+                    <span>Commande </span>
+                </a>
+            </li>
+            <li class="nav-main-item">
+                <a href="#">
+                    <img src="src/livraison.svg" alt="livraison">
+                    <span style="margin-top: -4px;">Livraison</span>
+                </a>
+            </li>
+            <li class="nav-main-item">
+                <a href="#">
+                    <img src="src/caisse.svg" alt="caisse">
+                    <span style="margin-top: 4px;">Caisse</span>
+                </a>
+            </li>
+            <li class="nav-main-item">
+                <a href="#">
+                    <img src="src/message.svg" alt="message">
+                    <span style="margin-top: -2px;">Messages</span>
+                </a>
+            </li>
+            <li class="nav-main-item">
+                <a href="#">
+                    <img src="src/inventaire.svg" alt="inventaire">
+                    <span>Inventaire</span>
+                </a>
+            </li>
+            <li class="nav-main-item">
+                <a href="#">
+                    <img src="src/engrenage.svg" alt="parametre">
+                    <span style="margin-top: -2px;">Paramêtres</span>
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+    <header>
+        <img src="src/inventaire.svg" alt="inventaire">
+        <div class="text">
+            <h1>Inventaire</h1>
+            <span>ajout de produit</span>
+        </div>
+    </header>
+    <div class="big_text">
+        <p>Boite d'ajout</p>
+        <p class="boite">ajouter des boites</p>
+    </div>
+    <div class="big_boxe">
+        <main>
+            <form action="ajout_prod.php" method="post">
+
+                <div>
+                    <div class="text_1">
+                        <div class="sous_text_1">
+                            <label class="p_sous_text">Non du produit</label>
+                            <input id="nom" type="text" name="nom" value="hyhhh" id="">
+                        </div>
+    
+                        <div class="sous_text_2">
+                            <label class="p_sous_text">Prix</label>
+                            <input id="prix" type="number" value="345" name="prix" id="">
+                        </div>
+                    </div>
+                </div>  
+                <div class="text_2">
+                    <p class="p_sous_text">Descriptions</p>
+                    <p class="cate_produit">catégorie de produit</p>
+                </div>
+                <div class="text_area">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="btn_radio">
+                        <div class="input">
+                            <label for="acne">acne</label>
+                            <input type="radio" name="tel" id="acne">
+                        </div>
+    
+                        <div class="input">
+                            <label for="sun">sun</label>
+                            <input type="radio" name="tel" id="sun">
+                        </div>
+    
+                        <div class="input">
+                            <label for="ezcema">ezcema</label>
+                            <input type="radio" name="tel" id="ezcema">
+                        </div>
+    
+                        <div class="input">
+                            <label for="psoriasis">psoriasis</label>
+                            <input type="radio" name="tel" id="psoriasis">
+                        </div>
+    
+                        <div class="input">
+                            <label for="vitiligio">vitiligio</label>
+                            <input type="radio" name="tel" id="vitiligio">
+                        </div>
+                    </div>
+                </div>
+                <div class="boxe">
+                    <div class="">
+                        <input type="file" name="imageP" class="sous_boxe">
+                        <p class="text_p">image primaire</p>
+                    </div>
+    
+                    <div class="">
+                        <input type="file" name="imageS_1" class="sous_boxe_1">
+                        <p class="text_p1">image secondaire 1</p>
+                    </div>
+    
+                    <div class="">
+                        <input type="file" name="imageS_2"  class="sous_boxe_1">
+                        <p class="text_p1">image secondaire 2</p>
+                    </div>
+    
+                    <div>
+                        <input type="file" name="imageS_3" class="sous_boxe_1">
+                        <p class="text_p1">image secondaire 3</p>
+                    </div>
+    
+                    <div class="">
+                        <input type="file" name="imageS_4" class="sous_boxe_1">
+                        <p class="text_p1">image secondaire 4</p>
+                    </div>
+    
+                </div>
+            </form>
+            <form action="ajout_prod.php" method="post">
+
+                <div>
+                    <div class="text_1">
+                        <div class="sous_text_1">
+                            <label class="p_sous_text">Non du produit</label>
+                            <input id="nom" type="text" name="nom" value="hh" id="">
+                        </div>
+    
+                        <div class="sous_text_2">
+                            <label class="p_sous_text">Prix</label>
+                            <input id="prix" type="number" value="345" name="prix" id="">
+                        </div>
+                    </div>
+                </div>  
+                <div class="text_2">
+                    <p class="p_sous_text">Descriptions</p>
+                    <p class="cate_produit">catégorie de produit</p>
+                </div>
+                <div class="text_area">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div class="btn_radio">
+                        <div class="input">
+                            <label for="acne">acne</label>
+                            <input type="radio" name="tel" id="acne">
+                        </div>
+    
+                        <div class="input">
+                            <label for="sun">sun</label>
+                            <input type="radio" name="tel" id="sun">
+                        </div>
+    
+                        <div class="input">
+                            <label for="ezcema">ezcema</label>
+                            <input type="radio" name="tel" id="ezcema">
+                        </div>
+    
+                        <div class="input">
+                            <label for="psoriasis">psoriasis</label>
+                            <input type="radio" name="tel" id="psoriasis">
+                        </div>
+    
+                        <div class="input">
+                            <label for="vitiligio">vitiligio</label>
+                            <input type="radio" name="tel" id="vitiligio">
+                        </div>
+                    </div>
+                </div>
+                <div class="boxe">
+                    <div class="">
+                        <input type="file" name="imageP" class="sous_boxe">
+                        <p class="text_p">image primaire</p>
+                    </div>
+    
+                    <div class="">
+                        <input type="file" name="imageS_1" class="sous_boxe_1">
+                        <p class="text_p1">image secondaire 1</p>
+                    </div>
+    
+                    <div class="">
+                        <input type="file" name="imageS_2"  class="sous_boxe_1">
+                        <p class="text_p1">image secondaire 2</p>
+                    </div>
+    
+                    <div>
+                        <input type="file" name="imageS_3" class="sous_boxe_1">
+                        <p class="text_p1">image secondaire 3</p>
+                    </div>
+    
+                    <div class="">
+                        <input type="file" name="imageS_4" class="sous_boxe_1">
+                        <p class="text_p1">image secondaire 4</p>
+                    </div>
+    
+                </div>
+            </form>
+        </main>
+        
+    
+        <aside>
+            <div>
+            </div>
+            <div class="change_produits">
+                <div class="sous_change_produits">
+                    <input type="number" value="1" min="1" id="nombre" class="num">
+                    <button id="plus">+</button>
+                    <script>
+                        
+                    </script>
+                </div>
+                <div class="cherche_produits">
+                    <button type="button" class="search__btn">
+                        <i>
+                            <span class="material-symbols-outlined">search</span>
+                        </i>
+                    </button>
+                    <div>
+                        <p class="p_rec">recherce du produit</p>
+                        <input type="text" placeholder="Recherche" class="search__input">
+                    </div>
+                </div>
+                <button class="modifier" id="ajouter">Ajouter</button>
+                <button  class="supprimer">Supprimer</button>
+            </div>
+        </aside>
+    </div>
+    <script src="test.js"></script>
+
+</body>
+</html>

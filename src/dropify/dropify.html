@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dropify.css">
+</head>
+<body>
+    <div class="grid simple">
+        <div class="grid-title no-border">
+            <h4>DOCUMENTS ADMINISTRATIFS</h4>
+            <p>Prière nous mettre à disposition les copies scannées en PDF de votre Registre de Commerce, votre DFE (Déclaration Fiscale d'existence) Et votre CNI</p>
+        </div>
+        <div class="grid-body no-border">
+            <div class="row-fluid">
+                
+                <form action="document_ppci_members" class="document_ppci_members">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="rc">Registre de commerce
+                                <div class="dropify-wrapper"><div class="dropify-message"><span class="file-icon"></span> <p>Glissez-déposez un fichier ici ou cliquez</p><p class="dropify-error">Désolé, le fichier trop volumineux</p></div><div class="dropify-loader"></div><div class="dropify-errors-container"><ul></ul></div><input id="rc" class="dropify" type="file" data-default-file="" name="rc"><button type="button" class="dropify-clear">Supprimer</button><div class="dropify-preview"><span class="dropify-render"></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-filename"><span class="dropify-filename-inner"></span></p><p class="dropify-infos-message">Glissez-déposez un fichier ou cliquez pour remplacer</p></div></div></div></div>
+                            </label>
+                        </div>
+                       
+                        <div class="col-md-3">
+                            <label for="dfe">Déclaration Fiscale d'existence
+                                <div class="dropify-wrapper"><div class="dropify-message"><span class="file-icon"></span> <p>Glissez-déposez un fichier ici ou cliquez</p><p class="dropify-error">Désolé, le fichier trop volumineux</p></div><div class="dropify-loader"></div><div class="dropify-errors-container"><ul></ul></div><input id="dfe" class="dropify" type="file" data-default-file="" name="dfe"><button type="button" class="dropify-clear">Supprimer</button><div class="dropify-preview"><span class="dropify-render"></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-filename"><span class="dropify-filename-inner"></span></p><p class="dropify-infos-message">Glissez-déposez un fichier ou cliquez pour remplacer</p></div></div></div></div>
+                            </label>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="cni">CNI
+                                <div class="dropify-wrapper"><div class="dropify-message"><span class="file-icon"></span> <p>Glissez-déposez un fichier ici ou cliquez</p><p class="dropify-error">Désolé, le fichier trop volumineux</p></div><div class="dropify-loader"></div><div class="dropify-errors-container"><ul></ul></div><input id="cni" class="dropify" type="file" data-default-file="" name="cni"><button type="button" class="dropify-clear">Supprimer</button><div class="dropify-preview"><span class="dropify-render"></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-filename"><span class="dropify-filename-inner"></span></p><p class="dropify-infos-message">Glissez-déposez un fichier ou cliquez pour remplacer</p></div></div></div></div>
+                            </label>
+                        </div>
+                       
+                        <input type="hidden" name="id" value="">
+                        <input type="hidden" value="" name="id_ppci_members_pro">
+                        <div class="col-md-3">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

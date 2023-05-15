@@ -1,0 +1,80 @@
+
+*{margin:0;padding: 0;}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+
+.row{
+margin:100px 30px 30px 60px;
+padding-bottom: 40px;
+}
+
+.para_1{
+
+
+    padding: 10px 30px 30px 0px;
+    margin: 0px 115px 30px ;
+}
+
+button{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    font-size: large;
+    background-color: #262626;
+    color:white;
+    border: none;
+}
+
+/*-----------------------------Style des tableaux Inscriptions particulières-----------------------------------*/
+.col-md-4 div input{
+    border: 1px rgb(252, 241, 36) solid;
+    height: 60px;
+}
+.col-md-3 div input{
+    border : 1px rgb(252, 241, 36) solid;
+    height: 60px;
+}
+
+.col-md-6 div input{
+    border: 2px var(--yellow) solid;
+    height: 60px;
+}
+
+.form-control:focus{
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--noir_autre);
+    outline: 0;
+}
+input#wish {
+    width: fit-content;
+}
+#lbl{
+    width: fit-content;
+}
+.col-md-3 div select{
+    border : 1px rgb(252, 241, 36) solid;
+    height: 60px;
+}
+
+
+/*-------------------------------   -------------------------------*/
+
+.col-md-4 div select{
+    border : 1px rgb(252, 241, 36) solid;
+    height: 60px;
+}
+dl, ol, ul:not(#list-nav) {
+   
+}
+#list-nav{
+    box-sizing:unset;
+}

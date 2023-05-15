@@ -1,0 +1,116 @@
+
+*{margin:0;padding: 0;}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+
+.row{
+margin:100px 30px 30px 60px;
+padding-bottom: 40px;
+}
+
+.para_1{
+
+
+    padding: 10px 30px 30px 0px;
+    margin: 0px 115px 30px ;
+}
+
+button{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    font-size: large;
+    background-color: #262626;
+    color:white;
+    border: none;
+}
+
+/*-----------------------------Style des tableaux Inscriptions particulières-----------------------------------*/
+.col-md-4 div input{
+}
+.col-md-3 div input{
+    height: 60px;
+}
+
+.col-md-6 div input, .col-md-4 div input, .col-md-4 div select,.col-md-3 div input{
+    border: 2px var(--yellow) solid;
+    height: 60px;
+}
+
+.form-control:focus{
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: var(--noir_autre);
+    outline: 0;
+}
+input#wish {
+    width: fit-content;
+}
+#lbl{
+    width: fit-content;
+}
+.col-md-3 div select{
+    height: 60px;
+    border: 2px var(--yellow) solid;
+}
+
+
+/*-------------------------------   -------------------------------*/
+
+.col-md-4 div select{
+    height: 60px;
+}
+#list-nav{
+    box-sizing:unset;
+}
+*, ::after, ::before,.nav-set {
+    box-sizing: unset;
+}
+h3{
+    text-align: center;
+}
+main{
+    margin-top: 65px;
+    padding-bottom: 50px;
+}
+nav a{
+    text-decoration:none;
+    color:black;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: white!important;
+    outline: 0;
+    border-color: black!important;
+    box-shadow: 0 0 0 !important;
+}
+input:-internal-autofill-selected {
+  /* Propriétés CSS à appliquer lorsque le champ est rempli automatiquement */
+  /* Par exemple : */
+  background-color: #eeeeee!important;
+  color: black;
+}
+#long-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 73px;
+}
+#type-btn{
+    display: flex;
+    width: 162px;
+    justify-content: space-between;
+}
+.choice-actor{
+    width: 45%;
+    font-size: x-small;
+    height: 38px;
+    border-radius: 3px;
+}

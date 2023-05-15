@@ -1,0 +1,60 @@
+#lot{
+    display: flex;
+    margin-top: 150px;
+}
+#bloc-image-description{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.div_under_lot{
+    width: 45%;
+    height: 77vh;
+}
+#bloc-image-part{
+    display: flex;
+    width: 65%;
+    overflow: hidden;
+    height: 65.5%;
+}
+#cadre{
+    display: flex;
+    transition: 0.7s;
+}
+.image-unite{
+    height: 100%;
+    margin-left: 10px;
+}
+.image-unite img{
+   height: 99.5%;
+}
+#position-img-unite{
+    height: 5px;
+    position: relative;
+    width: 490px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#arrows{
+    margin-top: 15px;
+}
+.position-unite{
+    position: relative;
+    /* background-color: var(--black_carte_produit); */
+    height: 3px;
+    border-radius: 30px;
+    border: 0.5px solid #a7a7a7;
+    width: 80px;
+}
+#cursor{
+    /* deplacement de 102px */
+    background-color: var(--black_carte_produit);
+    height: 3px;
+    border-radius: 30px;
+    width: 80px;
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 0.7px;
+}

@@ -1,0 +1,339 @@
+/* DEFINITION DES PARAMETRE DE BASE  */
+:root{
+    --green:#44D7B6;
+    --blue_sombre:#214F77;
+    --black_carte_produit:#262626;
+    --noir_autre:#373737;
+    --yellow:#E6B925;
+    --white_BG:#F3F6FA;
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'SegoeUI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    height: 100vh;
+}
+body{
+    /* display: flex; */
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    background-color: #FCFCFC;
+}
+footer{
+    margin-top: auto;
+}
+@font-face {  
+    font-family: "segoeUI";
+    src: url(../assets/fonts/segoeUI.ttf);
+}
+@font-face {
+    font-family: "segoeUI-semilight";
+    src: url(../assets/fonts/segoeUI-semiligth-italic.ttf);
+}
+@font-face {
+    font-family: "segoeUI-italic";
+    src: url(../assets/fonts/segoeUI-italic.ttf);
+}
+a{
+    color: black;
+}
+/*---------------------------FOOTER---------------------------------------------------*/
+
+footer{
+    padding: 50px;
+    margin-top: auto;
+    background-color: #262626;
+    color: white;
+}
+
+.footerSection1{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    column-gap: 30px;
+}   
+
+
+
+.footerSection1>section>p{
+    text-align: left;
+}
+
+#logoFooter{
+    height: 30px;
+}
+.iconeFooter{
+    height: 15px;
+    padding-right: 25px;
+}
+
+.footerSection2{
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* FIN  */
+
+
+/* CODE DE LA NAV-BAR  */
+nav{
+    position: relative;
+    /* transition: 0.3s; */
+}
+.nav-set{
+    height: 80px;
+    display: flex;
+    background-color: white;
+}
+.nav-set a{
+    z-index: 101;
+    transform: translate(80px, 10px);
+}
+#under-nav{
+    border-bottom: solid var(--yellow);
+    top: 0;
+    position: absolute;
+    width: 100%;
+    padding-top: 0px;
+    transition: all ease-in-out 0.3s;
+}
+#list-under-nav{
+    display: flex;
+    width: 90%;
+    padding-left: 85px;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+#searchBar-bloc{
+    width: 80%;
+    height: 60px;
+    margin-left: 10px;
+}
+#searchBar{
+    height: 50px;
+    width: 80%;
+    box-shadow: 0 0 14px #0000000a;
+    border: none;
+    border-radius: 3px;
+    padding-left: 35px;
+}
+
+input#searchBar:focus ~ #under-nav {
+    padding-top: 75px;
+}
+
+#searchBar:focus-visible{
+    outline: var(--yellow) solid;
+}
+#list-nav{
+    position: absolute;
+    z-index: 100;
+    width: 65%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 32%;
+    align-items: center;
+}
+#logo{
+    width: 130px;
+}
+#search_icon img{
+    width: 30px;
+}
+#search_icon{
+    margin-bottom: 5px;
+}
+nav:hover #under-nav{
+    padding-top: 75px;
+    background-color: white;
+}
+#under-nav:focus-within{
+    padding-top: 75px;
+}
+#searchBar::placeholder{
+    font-size: medium;
+    font-family: 'SegoeUI-italic', Tahoma, Geneva, Verdana, sans-serif;
+}
+#bloc-article{
+    margin-top: 100px;
+}
+#ul_under_bloc-article{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+.card-lot{
+    border-radius: 10px;
+    height: 360px;
+    width: 205px;
+    background-color: #cdcdcd;
+    /* margin-left: 25px; */
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+.card-lot:hover{
+    scale: 1.01;
+}
+.card-bloc-img>img{
+    margin-top: 10px;
+    width: 100%;
+}
+.card-bloc-img{
+    width: 205px;
+    height: 150px;
+    overflow: hidden;
+}
+.descript-card{
+    background-color: var(--black_carte_produit);
+    color: white;
+    height: 54%;
+    display: flex;
+    margin-top: -4px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+.descriptLot p{
+    text-overflow: ellipsis;
+    font-size: small;
+    overflow: hidden;
+    height: 85px;
+}
+.card-lot .action-bloc button{
+    height: 25px;
+    border: none;
+    background-color: white;
+    border-radius: 3px;
+    width: 85px;
+}
+.card-lot .action-bloc a{
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+.action-bloc{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.rigth-span,.rigth-span-etat{
+    float: right;
+}
+.left-span,.rigth-span{
+    font-size: small;
+}
+.rigth-span-etat{
+    color: var(--yellow);
+    font-size: small;
+    font-family: "segoeUI-semilight";
+}
+li.card-lot a {
+    color: white;
+}
+#acheter-nav-btn{
+    position: relative;
+}
+#menu-acheter-btn{
+    background-color: #1E1E1E;
+    display: flex;
+    color: white;
+    position: absolute;
+    width: 0vw;
+    height: 0vh;
+    padding: 0px;
+    top: 35px;
+    box-shadow: 0px 1px 11px #0000003b;
+    transition: 0.3s;
+    display: flex;
+}
+.column-menu{
+    height: 100%;
+    width: 30%;
+    display: none;
+}
+.liste-menu{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.liste-menu p {
+    color: #adadad;
+    font-size: 14px;
+}
+#acheter-nav-btn:hover #menu-acheter-btn{
+    width: 48vw;
+    height: 43vh;
+    padding: 30px;
+}
+#acheter-nav-btn:hover #menu-acheter-btn .column-menu{
+    display: block;
+}
+#acheter-nav-btn span{
+    cursor: pointer;
+}
+#acheter-nav-btn span::before{
+    content: '';
+    height: 70px;
+    width: 67px;
+    display: block;
+    position: absolute;
+    top: -29px;
+    z-index: -1;
+}
+.nav-ico{
+    width: 20px;
+    transform: translateY(4px);
+}
+#shape-notify {
+    border-radius: 10px;
+    background-color: #599c60;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    bottom: 30px;
+    right: 50px;
+  }
+  #shape-notify:hover{
+    transform: translateY(-5px);
+  }
+  
+  #content-notify {
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-height: 18vh;
+    max-width: 45vh;
+  }
+  
+  #close-btn-notify {
+   
+    font-size: 20px;
+    cursor: pointer;
+  }
+  #menu-acheter-btn a{
+    color: white;
+  }
+  .head-menu-list p{
+    cursor: default;
+  }

@@ -1,0 +1,335 @@
+*{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+div#encapsulation-H {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+h4 {
+    padding-left: 26px;
+}
+
+section.blocTableauDeBord3 img {
+    height: 29px;
+    margin-top: 13px;
+}
+
+
+
+li {
+    font-size: 13px;
+    text-align: center;
+}
+
+li>em {
+    font-size: large;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#bloc8Nombre img {
+    height: 35px;
+}
+
+.enteteTableauDeBord{
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.jourTableauDeBord{
+    color: white;
+    background-color:#0058ff;
+    padding: 7px; 
+    border-radius: 4px;
+    cursor: default;
+    font-size: small;
+    transition: 0.3s;
+}
+
+article.jourTableauDeBord:hover {
+    background-color: #3275f3;
+}
+.dateTableauDeBord{
+    color: #214f77;
+    border: #214F77 1px solid;
+    padding: 4px;
+    border-radius: 3px;
+    display: flex;
+    font-size: small;
+}
+
+.dateTableauDeBord em {
+    margin-top: 3px;
+}
+
+.blocTableauDeBord1, .blocTableauDeBord3{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 15px;
+
+}
+.blocTableauDeBord2{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 15px;
+
+}
+/*BLOCS*/
+
+.bloc4{
+
+    justify-content: space-between;
+}
+
+.bloc1, .bloc2, .bloc3, .bloc4, .bloc10, .bloc11, .bloc12{
+    display: flex;
+    background-color:#ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px #26262617;
+    resize: none;
+} 
+
+.bloc5>ul, .bloc6>ul, .bloc7>ul, .bloc8>ul, .bloc9>ul{
+    list-style-type: none;
+    padding: 0px;
+}
+.bloc5, .bloc6, .bloc7, .bloc8, .bloc9{
+    background-color:#ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px #26262617;
+}
+
+p{
+    text-align: center;
+}
+
+.bloc4_partie1 p {
+    margin-top: 34%;
+}
+
+.bloc5>ul>li>img,.bloc6>ul>li>img,.bloc7>ul>li>img,.bloc9>ul>li>img{
+    height: 47px;
+}
+
+.bloc5>ul,.bloc6>ul,.bloc7>ul,.bloc9>ul{
+    width: 100%;
+}
+
+#bloc5Nombre,#bloc6Nombre,#bloc7Nombre,#bloc8Nombre,#bloc9Nombre{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px;
+}
+/*PARTIE DROITE DES BLOCS (là ou on indique le nombre)*/
+                                                                                                                    
+.bloc1_partie2,.bloc2_partie2,.bloc3_partie2,.bloc10_partie2,.bloc11_partie2,.bloc12_partie2{
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 40px; 
+    border-left: 2px solid #999FA3;
+    color: #44D7B6;
+}
+
+.bloc2_partie2{   
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-left: 2px solid #999FA3;
+}
+.bloc4_partie2>button{
+    background-color: #44D7B6;
+    height:100%;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+
+.bloc4_partie2{
+    width: 50%;
+}
+
+/*PARTIE GAUCHE*/
+
+.bloc1_partie1>p,.bloc2_partie1>p,.bloc3_partie1>p,.bloc10_partie1>p,.bloc11_partie1>p,.bloc12_partie1>p{
+    font-size: 13px;
+}
+.bloc1_partie1>img{
+    height: 50px;
+}
+
+.bloc2_partie1>img{
+    height: 47px;
+}
+.bloc3_partie1>img{
+    width: 60px;
+}
+.bloc1_partie1, .bloc2_partie1,.bloc3_partie1,.bloc10_partie1,.bloc11_partie1,.bloc12_partie1{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 70%;
+     margin-top: 5px;
+} 
+
+.bloc4_partie1{
+    width: 50%;
+}
+
+.boutonBloc{
+    background-color:white;
+    cursor: pointer;
+    border: none;
+    color: #707070;
+    
+}
+button{
+    border: none;
+    cursor: pointer;
+}
+
+/*PARAMETRES GENERAUX DE VENTE*/
+
+.parametreDeVente{
+    display: grid;
+    margin: 2%;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5%;
+}
+.parametre_Infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parametre_Info1>p, .parametre_Info2>p{
+    color: white;  
+    
+    padding: 40px;
+    text-align: left;
+    
+}
+
+.parametre_Info1,.parametre_Info2{
+    background-color: #262626;
+    height: 300px;
+}
+
+.parametre_Info1>img, .parametre_Info2>img{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+.parametre_Formulaire{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+      
+}
+
+#parametre_Formulaire1, #parametre_Formulaire2{
+    background-color: #F3F6FA;
+       
+}
+
+#parametre_Formulaire2{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    row-gap: 10px;
+    
+}
+#parametre_Formulaire2>article>textarea{
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px
+}
+
+.champPaiementVisa{
+    margin-left: 20px;
+    padding-bottom: 40px;
+}
+
+.champPaiementVisa>textarea{
+    border: none;
+    margin-top: 10px;
+}
+.boutonsMethodesPaiement{
+    display: flex;  
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+
+.boutonsMethodesPaiement>button{
+    background-color: white;
+}
+.boutonsMethodesPaiement>button>img{
+    width: 100px;
+}
+
+#enregistrer{
+    background-color: #262626;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 47%;
+    margin-top: 25px;
+}
+
+
+/*---------------------------FOOTER---------------------------------------------------*/
+
+footer{
+    padding: 50px;
+    margin-top: 80px;
+    background-color: #262626;
+    color: white;
+}
+
+.footerSection1{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    column-gap: 30px;
+}   
+
+
+
+.footerSection1>section>p{
+    text-align: left;
+}
+
+#logoFooter{
+    height: 30px;
+}
+.iconeFooter{
+    height: 15px;
+    padding-right: 25px;
+}
+
+.footerSection2{
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
